@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTTP Question Answers</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">
+	<style>
+		h1 {
+  			color:#e6817a;
+  			font-family: 'KoHo', sans-serif;
+  			font-weight: bold;
+  			border-bottom: 0.125vw solid #f7b7b7;
+  			text-align:  center;
+
+		}
+		body{
+			font-family: 'KoHo', sans-serif;
+			font-size: 20px;
+			font-weight: 500;
+			color: #4f4d4d;
+			background-color: #ebeced;
+		}
+
+		img.sticky {
+  			position: fixed;
+  			top: 100px;
+  			left: 50%;
+  			width:750px;
+  			height:600px;
+  		}
+  		.unsticky{
+  			padding-right: 50%;
+  		}
+
+  		footer{
+  			color: #999696;
+  		}
+
+
+	</style>
+</head>
+<body>
+	<h1> HTTP Questions and Answers </h1>
+
+	<img class="sticky" src="images/HTTP.png" alt="HTTP">
+
+	<div class="unsticky">
+	<p> <b>1. What is the Hypertext Transfer Protocol (HTTP)? </b> </p>
+	<p> <b> Ans. </b> Hypertext Transfer Protocol (HTTP) is an application-layer protocol which follows client-server model for transmitting hypermedia documents, such as HTML. </p>
+
+	<p> <b>2. Why is HTTP called a stateless protocol? </b> </p>
+	<p> <b> Ans. </b> Because each request is executed independently of the requests that came before it, HTTP is known as a stateless protocol. This implies that once a transaction is completed, the connection between the browser and the server is also terminated. </p>
+
+	<p> <b>3. Describe the three phases of establishing a session using client-server protocols such as HTTP. </b> </p>
+	<p> <b> Ans. </b> The client-server protocal consists of three phases of establishment which are:
+		<ol>
+			<li>The client establishes a TCP connection (or the appropriate connection if the transport layer is not TCP).</li>
+			<li>The client sends its request, and waits for the answer.</li>
+			<li>The server processes the request, sending back its answer, providing a status code and appropriate data.</li>
+		</ol> </p>
+
+	<p> <b>4. Describe the parameters on a get and post request. </b> </p>
+	<p> <b> Ans. </b> </p>
+
+	<p> <b>5. What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate? </b> </p>
+	<p> <b> Ans. </b> HTTP response status codes show whether or not a particular HTTP request was completed successfully. It is of 5 types:
+		<ol>
+			<li>Informational responses (100–199)</li>
+			<li>Successful responses (200–299)</li>
+			<li>Redirects (300–399)</li>
+			<li>Client errors (400–499)</li>
+			<li>Server errors (500–599)</li>
+		</ol>
+		<ul>
+			<li>200- It indicates that the request was fulfilled.</li>
+			<li>404- It indicates that the server has not found anything matching the URI given.</li>
+		</ul>
+	</p>
+
+	<p> <b>6. What are HTTP cookies? Give an example. </b> </p>
+	<p> <b> Ans. </b> An HTTP cookie (also known as a web cookie or browser cookie) is a small piece of data sent by a server to a user's web browser. It's possible that the browser will save it and send it back with subsequent requests to the same server. For eg. keeping a user logged in.</p>
+
+	<p> <b>7. Why are cookies a security issue? </b> </p>
+	<p> <b> Ans. </b> Because cookies are kept locally, they can be tampered with by malevolent users. Cookies can also be used to hijack another user's session and therefore to commit fraud. They can also be used to track a user's surfing history.</p>
+
+	<p> <b>8. Describe session hijacking and XSS. </b> </p>
+	<p> <b> Ans. </b> A session hijacking attack occurs when an attacker takes control of a user's session. When you log into a service, such as your banking application, a session begins and ends when you log out. The attack is also known as cookie hijacking or cookie side-jacking since it relies on the attacker's knowledge of your session cookie. <br>
+	&nbsp; &nbsp; Cross-site scripting (XSS) is the most hazardous and common way of stealing an online session. Attackers can inject client-side scripts (usually JavaScript) into web pages by exploiting server or application vulnerabilities, enabling your browser to execute arbitrary code when it loads a compromised website. </p>
+
+	<p> <b>9. Describe Cross-site request forgery (CSRF). </b> </p>
+	<p> <b> Ans. </b> Cross-Site Request Forgery (CSRF) is a type of attack that causes an authenticated user to do undesirable actions on a web application. CSRF attack deceives the victim into submitting a malicious request. It takes on the victim's identity and privileges in order to perform an unwanted function on the victim's behalf.</p>
+
+	<p> <b>10. What are Cross-site HTTP requests (CORS) and what requests use CORS? </b> </p>
+	<p> <b> Ans. </b> CORS (Cross-Origin Resource Sharing) is an HTTP header-based system that allows a server to specify any additional origins (domain, scheme, or port) from which a browser should enable resource loading. The requests used by CORS are:
+		<ol>
+			<li>Invocations of the XMLHttpRequest or Fetch APIs.</li>
+			<li>Web Fonts (for cross-domain font usage in @font-face within CSS), so that servers can deploy TrueType fonts that can only be cross-site loaded and used by web sites that are permitted to do so.</li>
+			<li>WebGL textures.</li>
+			<li>Images/video frames drawn to a canvas using drawImage().</li>
+			<li>CSS Shapes from images.</li>
+		</ol>
+	</p>
+
+	</div>
+
+	<footer>
+		<p>Garima Dhakal — dgarima20@tbc.edu.np</p>
+	</footer>
+
+</body>
+</html>
+
+
