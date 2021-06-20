@@ -1,117 +1,356 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #d9d9d9;
-    font-family: 'Cormorant Garamond', serif;
-    scroll-behavior: smooth;
-  }
-  
-  p{
-    font-weight: 300;
-    color: #111;
-  }
-  
-  
-  .banner{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('images/bg.jpg');
-    background-size: cover;
-  }
-  
-  .banner .content{
-    max-width: 900px;
-    text-align: center;
-  }
-  
-  .banner .content h2{
-    font-size: 5em;
-    color: #fff;
-  }
-  
-  .banner .content p{
-    font-size: 1em;
-    color: #fff;
-  }
-  
-  .btn{
-    font-size: 1em;
-    color: #fff;
-    background: #FF4233;
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-  }
-  
-  .btn:hover{
-    letter-spacing: 6px;
-  }
-  
-  header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 10000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-  }
-  
-  header.sticky{
-    background: #fff;
-    padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 05);
-  }
-  
-  header .logo{
-    color: #FF4500;
-    font-weight: 700;
-    font-size: 2em;
-    text-decoration: none;
-  }
-  
-  header.sticky .logo{
-    color: #111;
-  }
-  
-  header .logo span{
-    color: #333EFF;
-  }
-  
-  header .navigation{
-    position: relative;
-    display: flex;
-  }
-  
-  header .navigation li{
-    list-style: none;
-    margin-left: 30px;
-  }
-  
-  header .navigation li a{
-    text-decoration: none;
-    color: #FF4500;
-    font-weight: 400;
-  }
-  
-  header.sticky .navigation li a{
-    color: #111;
-  }
-  
-  header .navigation li a:hover{
-    color: yellow;
-    letter-spacing: 5px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #d9d9d9;
+  font-family: 'Cormorant Garamond', serif;
+  scroll-behavior: smooth;
+}
+
+p{
+  font-weight: 300;
+  color: #111;
+}
+
+
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('images/bg.jpg');
+  background-size: cover;
+}
+
+.banner .content{
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2{
+  font-size: 5em;
+  color: #fff;
+}
+
+.banner .content p{
+  font-size: 1em;
+  color: #fff;
+}
+
+.btn{
+  font-size: 1em;
+  color: #fff;
+  background: #FF4233;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  letter-spacing: 6px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky{
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 05);
+}
+
+header .logo{
+  color: #FF4500;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+header.sticky .logo{
+  color: #111;
+}
+
+header .logo span{
+  color: #333EFF;
+}
+
+header .navigation{
+  position: relative;
+  display: flex;
+}
+
+header .navigation li{
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navigation li a{
+  text-decoration: none;
+  color: #FF4500;
+  font-weight: 400;
+}
+
+header.sticky .navigation li a{
+  color: #111;
+}
+
+header .navigation li a:hover{
+  color: yellow;
+  letter-spacing: 5px;
+}
+
+/* footer css start */
+footer{
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+  background: linear-gradient(57deg, #000428, #004e92);
+}
+.content1{
+position: relative;
+margin: 130px auto;
+text-align: center;
+padding: 0 20px;
+}
+.content1 .text{
+font-size: 2.5rem;
+font-weight: 600;
+color: #202020;
+}
+.content1 .p{
+font-size: 2.1875rem;
+font-weight: 600;
+color: #202020;
+}
+
+
+.main-content .box{
+flex-basis: 50%;
+padding: 10px 20px;
+}
+.box h2{
+font-size: 1.125rem;
+font-weight: 600;
+text-transform: uppercase;
+}
+.box .content{
+margin: 20px 0 0 0;
+position: relative;
+}
+.box .content:before{
+position: absolute;
+content: '';
+top: -10px;
+height: 2px;
+width: 100%;
+background: #1a1a1a;
+}
+.box .content:after{
+position: absolute;
+content: '';
+height: 2px;
+width: 15%;
+background: #f12020;
+top: -10px;
+}
+.left .content p{
+text-align: justify;
+}
+.left .content .social{
+margin: 20px 0 0 0;
+}
+.left .content .social a{
+padding: 0 2px;
+}
+.left .content .social a span{
+height: 40px;
+width: 40px;
+background: #1a1a1a;
+line-height: 40px;
+text-align: center;
+font-size: 18px;
+border-radius: 5px;
+transition: 0.3s;
+}
+.left .content .social a span:hover{
+background: #f12020;
+}
+.center .content .fas{
+font-size: 1.4375rem;
+background: #1a1a1a;
+height: 45px;
+width: 45px;
+line-height: 45px;
+text-align: center;
+border-radius: 50%;
+transition: 0.3s;
+cursor: pointer;
+}
+.center .content .fas:hover{
+background: #f12020;
+}
+.center .content .text{
+font-size: 1.0625rem;
+font-weight: 500;
+padding-left: 10px;
+}
+.center .content .phone{
+margin: 15px 0;
+}
+.right form .text{
+font-size: 1.0625rem;
+margin-bottom: 2px;
+color: #656565;
+}
+.right form .msg{
+margin-top: 10px;
+}
+.right form input, .right form textarea{
+width: 100%;
+font-size: 1.0625rem;
+background: #151515;
+padding-left: 10px;
+border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+outline-color: #3498db;
+}
+.right form input{
+height: 35px;
+}
+.right form .btn{
+margin-top: 10px;
+}
+.right form .button button{
+height: 40px;
+width: 100%;
+border: none;
+outline: none;
+background: #f12020;
+font-size: 1.0625rem;
+font-weight: 500;
+cursor: pointer;
+transition: .3s;
+}
+.right form .button button:hover{
+background: green;
+}
+.bottom center{
+padding: 5px;
+font-size: 0.9375rem;
+background: #151515;
+}
+.bottom center span{
+color: #656565;
+}
+.bottom center a{
+color: #f12020;
+text-decoration: none;
+}
+.bottom center a:hover{
+text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+footer{
+  position: relative;
+  bottom: 0px;
+}
+.main-content{
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.main-content .box{
+  margin: 5px 0;
+}
+}
+
+/* footer css end */
+
+/* genre/picks/special books css start */
+.title{
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titleText{
+  color: #111;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.titleText span{
+  color: #ff0157;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+p{
+  color: black;
+}
+
+.imenu .content{
+  display: flex;
+  justify-content: center;
+  font-display: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.imenu .content .box{
+  width: 300px;
+  margin: 20px;
+  border: 10px solid #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
+}
+
+
+.imenu .content .box .imgBx{
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.imenu .content .box .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.imenu .content .box .text{
+  padding: 15px 0 5px;
+}
+
+.imenu .content .box .text h3{
+  font-weight: 400;
+  color: #111;
+}
+
+/* genre/picks/special books css end */
