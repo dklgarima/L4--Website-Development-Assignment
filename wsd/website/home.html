@@ -27,13 +27,44 @@
             <li><a href="login.html">Login</a></li>
             </ul>
     </header>
-    <section class="banner" id="banner">
-        <div class="content">
-            <h2>Find the best.....</h2>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <div class="slide-data">
+                <h2>Find the best.....</h2>
             <p>The one and only site where you can find variety of books of best quality.</p>
             <a href="store.html" class="btn">Explore</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-data">
+                    <h2>Find the best.....</h2>
+            <p>The one and only site where you can find variety of books of best quality.</p>
+            <a href="about.html" class="btn">Get to know about us</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-data">
+                   <h2>Find the best.....</h2>
+            <p>The one and only site where you can find variety of books of best quality.</p>
+            <a href="location.html" class="btn">Where to find us</a>
+                </div>
+            </div>
         </div>
-    </section>
+
+        <button class="arrows prev" onclick="plusslide(-1)">
+            <span><i class="fa fa-angle-left" aria-hidden="true"></span>
+        </button>
+        <button class="arrows next" onclick="plusslide(1)">
+            <span><i class="fa fa-angle-right" aria-hidden="true"></span>
+        </button>
+
+        <div class="dots">
+            <span onclick="currentslide(1)"></span>
+            <span onclick="currentslide(2)"></span>
+            <span onclick="currentslide(3)"></span>
+        </div>
+    </div>
 
     <section class="imenu" id="menu">
         <div class="title">

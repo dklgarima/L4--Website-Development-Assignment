@@ -7,37 +7,148 @@
   scroll-behavior: smooth;
 }
 
-p{
-  font-weight: 300;
-  color: #111;
-}
+/* slider css start */
 
-
-.banner{
+.slider {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url('images/bg.jpg');
-  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.banner .content{
-  max-width: 900px;
+.slides {
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 2s ease;
+}
+
+.slide {
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.slide:nth-child(1) {
+  background-image: url(images/slider2.jpg);
+}
+
+.slide:nth-child(2) {
+  background-image: url(images/slider1.jpg);
+}
+
+.slide:nth-child(3) {
+  background-image: url(images/slider3.jpg);
+}
+
+.slide-data {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 0 20%;
+}
+
+.slide-data p{
+  color: #fff;
+}
+
+.slide-data h2 {
+  font-weight: bold;
+  font-size: 5em;
+}
+
+.slide-data p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.slide-data button {
+  background: none;
+  outline: none;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bolder;
+  padding: 10px 25px;
+  font-size: 20px;
+  transition: 0.4s linear;
+}
+
+.slide-data button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.slider .arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 60px;
+  color: #fff;
+  transition: 0.4s linear;
+}
+
+.slider .arrows:hover {
+  text-shadow: 0px 0px 10px black, 0px 0px 10px black;
+}
+
+.slider .prev {
+  left: 3%;
+}
+
+.slider .next {
+  right: 3%;
+}
+
+.dots {
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
   text-align: center;
 }
 
-.banner .content h2{
-  font-size: 5em;
-  color: #fff;
+.dots span {
+  width: 23px;
+  height: 23px;
+  border-radius: 100px;
+  margin: 0 6px;
+  background-color: #fff;
+  display: inline-block;
+  transition: 0.4s linear;
 }
 
-.banner .content p{
-  font-size: 1em;
-  color: #fff;
+.dots span:hover {
+  background-color: #000 !important;
+  border: 2px solid #fff;
 }
+
+.dot-active {
+  background-color: #000 !important;
+  border: 2px solid #fff;
+}
+
+/* slider css end */
 
 .btn{
   font-size: 1em;
