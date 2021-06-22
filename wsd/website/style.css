@@ -639,10 +639,13 @@ section{
 .contact-container{
   width: 100%;
   margin: 0 80px;
-  padding: 5%;
+  padding: 0.5%;
 }
 .text-center{
-  text-align: center;
+  /* text-align: center; */
+  padding-left: 40%;
+  color: #f74764;
+  font-size: 40px;
 }
 .clearfix{
   clear: both;
