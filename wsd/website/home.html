@@ -9,15 +9,22 @@
     <link rel="stylesheet" href="style.css">
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
+        href="https://cdn.jsdelivr.net/
+        npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
+
+
+
+
 
 </head>
 
 <body>
-    <header>
+    <!-- desktop header  -->
+
+    <header id="d-header">
+
         <a href="#" class="logo">Book Addicts</a>
         <ul class="navigation">
             <li><a href="home.html">Home</a></li>
@@ -25,29 +32,47 @@
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="store.html">Store</a></li>
             <li><a href="login.html">Login</a></li>
-            </ul>
+        </ul>
     </header>
+    <!-- desktop header end  -->
+
+    <!-- mobile header -->
+    <header id="m-header">
+        <div class="header-top">
+            <a href="#" class="m-logo block-left">Book Addicts</a>
+            <a class="toggler block-right"><i class="fa fa-bars" aria-hidden="true" id="menubar"></i></a>
+        </div>
+        <ul class="m-navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <!-- mobile header end -->
+
     <div class="slider">
         <div class="slides">
             <div class="slide">
                 <div class="slide-data">
-                <h2>Find the best.....</h2>
-            <p>The one and only site where you can find variety of books of best quality.</p>
-            <a href="store.html" class="btn">Explore</a>
+                    <h2>Find the best.....</h2>
+                    <p>The one and only site where you can find variety of books of best quality.</p>
+                    <a href="store.html" class="btn">Explore</a>
                 </div>
             </div>
             <div class="slide">
                 <div class="slide-data">
                     <h2>Find the best.....</h2>
-            <p>The one and only site where you can find variety of books of best quality.</p>
-            <a href="about.html" class="btn">Get to know about us</a>
+                    <p>The one and only site where you can find variety of books of best quality.</p>
+                    <a href="about.html" class="btn">Get to know about us</a>
                 </div>
             </div>
             <div class="slide">
                 <div class="slide-data">
-                   <h2>Find the best.....</h2>
-            <p>The one and only site where you can find variety of books of best quality.</p>
-            <a href="location.html" class="btn">Where to find us</a>
+                    <h2>Find the best.....</h2>
+                    <p>The one and only site where you can find variety of books of best quality.</p>
+                    <a href="location.html" class="btn">Where to find us</a>
                 </div>
             </div>
         </div>
@@ -116,7 +141,7 @@
                         <img src="images/genre1.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h3>Fiction</h3>
+                        <p>Fiction</p>
                     </div>
                 </div>
                 <div class="box">
@@ -124,7 +149,7 @@
                         <img src="images/genre2.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h3>Non-fiction</h3>
+                        <p>Non-fiction</p>
                     </div>
                 </div>
                 <div class="box">
@@ -132,7 +157,7 @@
                         <img src="images/genre3.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h3>Novel</h3>
+                        <p>Novel</p>
                     </div>
                 </div>
                 <div class="box">
@@ -140,7 +165,7 @@
                         <img src="images/genre4.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h3>Inspirational</h3>
+                        <p>Inspirational</p>
                     </div>
                 </div>
                 <div class="box">
@@ -148,7 +173,7 @@
                         <img src="images/genre5.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h3>Horror</h3>
+                        <p>Horror</p>
                     </div>
                 </div>
                 <div class="box">
@@ -156,7 +181,7 @@
                         <img src="images/genre6.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h3>True Crime</h3>
+                        <p>True Crime</p>
                     </div>
                 </div>
                 <div class="box">
@@ -164,7 +189,7 @@
                         <img src="images/genre7.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h3>Action and Adventure</h3>
+                        <p>Action and Adventure</p>
                     </div>
                 </div>
                 <div class="box">
@@ -172,7 +197,7 @@
                         <img src="images/genre8.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h3>Comic</h3>
+                        <p>Comic</p>
                     </div>
                 </div>
                 <div class="box">
@@ -180,7 +205,7 @@
                         <img src="images/genre9.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h3>Detective and Mystery</h3>
+                        <p>Detective and Mystery</p>
                     </div>
                 </div>
                 <div class="box">
@@ -188,23 +213,7 @@
                         <img src="images/genre10.jpg" alt="">
                     </div>
                     <div class="text">
-                        <h3>Fantasy</h3>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="imgBx">
-                        <img src="images/genre11.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3>Romance</h3>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="imgBx">
-                        <img src="images/genre12.jpg" alt="">
-                    </div>
-                    <div class="text">
-                        <h3>Women's Fiction</h3>
+                        <p>Fantasy</p>
                     </div>
                 </div>
             </div>
@@ -240,7 +249,7 @@
                         <img src="images/pic3.jpg" alt="American Marxism">
                     </div>
                     <div class="text">
-                        <h3>American Marxism</h3>
+                        <h3>Mark's American Marxism</h3>
                     </div>
                 </div>
                 <div class="box">
@@ -257,7 +266,7 @@
 
 
 
-    <section class="imenu" id="menu">
+    <section class="imenu last-sec" id="menu">
         <div class="title">
             <h2 class="titleText">Our <span>S</span>ervices</h2>
             <div class="service-container">
@@ -266,7 +275,7 @@
                         <i class="fa fa-truck" aria-hidden="true"></i>
                     </div>
                     <div class="content">
-                        <h3>Delivery</h3>
+                        <p>Delivery</p>
                         <p>Orders placed in Nepal will be delivered quickly.</p>
                     </div>
                 </div>
@@ -275,7 +284,7 @@
                         <i class="fa fa-shield" aria-hidden="true"></i>
                     </div>
                     <div class="content">
-                        <h3>Secure Payment</h3>
+                        <p>Secure Payment</p>
                         <p>We are dedicated to ensuring the safety of your personal information.</p>
                     </div>
                 </div>
@@ -284,7 +293,7 @@
                         <i class="fa fa-exchange" aria-hidden="true"></i>
                     </div>
                     <div class="content">
-                        <h3>Easy Returns</h3>
+                        <p>Easy Returns</p>
                         <p>Returns are free and simple on any of our products.</p>
                     </div>
                 </div>
@@ -293,11 +302,11 @@
                         <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                     </div>
                     <div class="content">
-                        <h3>Quality Checked</h3>
+                        <p>Quality Checked</p>
                         <p>We offer high-quality products and services.</p>
                     </div>
                 </div>
-               
+
             </div>
 
     </section>
@@ -308,7 +317,7 @@
             <div class="left box">
                 <h2>About us</h2>
                 <div class="content">
-                    <pre>This is the website where you can find the different varieties of book.</pre>
+                    <p>This is the website where you can find the different varieties of book.</p>
                     <div class="social">
                         <a href="#"><span <i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
                         <a href="#"><span <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
@@ -361,6 +370,24 @@
     </footer>
 
     <script src="main.js"></script>
+
+    <script>
+        var menu = document.querySelector('.toggler');
+
+        menu.addEventListener('click', () => {
+            var m = document.querySelector('.m-navigation');
+            // m.classList.toggle('m-nav-show');
+            if (m.style.display == "block") {
+                document.querySelector('.slider').style.top = "0px";
+
+                m.style.display = "none";
+            } else {
+                m.style.display = "block";
+                document.querySelector('.slider').style.top = "217px";
+
+            }
+        });
+    </script>
 </body>
 
 </html>

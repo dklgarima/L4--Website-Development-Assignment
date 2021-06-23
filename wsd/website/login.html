@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Addicts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <!-- desktop header  -->
+
+    <header id="d-header">
+        <a href="#" class="logo">Book Addicts</a>
+        <ul class="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <!-- desktop header end  -->
+
+    <!-- mobile header -->
+    <header id="m-header">
+        <div class="header-top">
+            <a href="#" class="m-logo block-left">Book Addicts</a>
+            <a class="toggler block-right"><i class="fa fa-bars" aria-hidden="true" id="menubar"></i></a>
+        </div>
+        <ul class="m-navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <!-- mobile header end -->
+
+
+    <div class="container login-container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="" class="sign-in-form">
+                    <h2 class="title">Login</h2>
+                    <div class="input-field">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" placeholder="Username" id="username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" placeholder="Password" id="password">
+                        <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+                    </div>
+                    <input type="submit" value="login" class="loginbtn solid" onclick="validate()">
+                    <p class="social-text">or Login with </p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Signup</h2>
+                    <div class="input-field">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" placeholder="Full name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <input type="text" placeholder="Address">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="number" placeholder="Contact">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" placeholder="Confirm Password">
+                    </div>
+                    <input type="submit" value="Signup" class="loginbtn solid">
+                    <p class="social-text">or Signup with </p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Still don't have an account?</h3>
+                    <p>Simply click on the button below to register an account.</p>
+                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="images/login.svg" class="image" alt="login image">
+            </div>
+
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Already have an account?</h3>
+                    <p>Simply click on the button below to login your account.</p>
+                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="images/signup.svg" class="image" alt="login image">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                    <p>This is the website where you can find the different varieties of book.</p>
+                    <div class="social">
+                        <a href="#"><span <i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+                        <a href="#"><span <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
+                        <a href="#"><span <i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                        <a href="#"><span <i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                    <div class="place">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span class="text">Budhanilkantha, Kathmandu</span>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <span class="text">+977 9818565467</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="text">bookaddicts33@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>Contact us</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email *</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Message *</div>
+                            <textarea rows="2" cols="25" required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <center>
+                <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+            </center>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        var menu = document.querySelector('.toggler');
+
+        menu.addEventListener('click', () => {
+            var m = document.querySelector('.m-navigation');
+            // m.classList.toggle('m-nav-show');
+            if (m.style.display == "block") {
+
+
+                m.style.display = "none";
+            } else {
+                m.style.display = "block";
+
+
+            }
+        });
+    </script>
+</body>
+
+</html>
