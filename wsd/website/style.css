@@ -435,8 +435,8 @@ p{
 }
 
 .imenu .content .box{
-  width: 300px;
-  margin: 20px;
+  width: 220px;
+  margin: 10px;
   border: 10px solid #fff;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
 }
@@ -452,9 +452,8 @@ p{
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: scale-down;
 }
 
 .imenu .content .box .text{
@@ -469,16 +468,16 @@ p{
 /* genre/picks/special books css end */
 
 /* services css start */
-.container{
+.service-container{
   position: relative;
   width: 100%;
   height: 300px;
   margin: 50px auto;
 }
 
-.container .pack{
+.service-container .pack{
   position: relative;
-  width: calc(379px - 30px);
+  width: calc(379px - 80px);
   height: calc(300px - 30px);
   background: #000;
   float: left;
@@ -488,7 +487,7 @@ p{
   border-radius: 20px;
 }
 
-.container .pack .icon{
+.service-container .pack .icon{
   position: absolute;
   top: 0;
   left: 0;
@@ -499,7 +498,7 @@ p{
   z-index: 1;
 }
 
-.container .pack:hover .icon{
+.service-container .pack:hover .icon{
   top: 20px;
   left: calc(50% - 40px);
   width: 80px;
@@ -507,7 +506,7 @@ p{
   border-radius: 50%;
 }
 
-.container .pack .icon .fa{
+.service-container .pack .icon .fa{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -517,11 +516,11 @@ p{
   color: #fff;
 }
 
-.container .pack:hover .icon .fa{
+.service-container .pack:hover .icon .fa{
   font-size: 40px;
 }
 
-.container .pack .content{
+.service-container .pack .content{
   position: absolute;
   top: 100%;
   height: calc(100% - 100px);
@@ -532,59 +531,59 @@ p{
   opacity: 0;
 }
 
-.container .pack:hover .content{
-  top: 100px;
+.service-container .pack:hover .content{
+  top: 30px;
   opacity: 1;
 }
 
-.container .pack .content h3{
+.service-container .pack .content h3{
   margin: 0 0 10px;
   padding: 0;
   color: #fff;
   font-size: 24px;
 }
 
-.container .pack .content p{
+.service-container .pack .content p{
   margin: 0;
   padding: 0;
   color: #fff;
 }
 
-.container .pack:nth-child(1) .icon{
+.service-container .pack:nth-child(1) .icon{
   background: #319635;
 }
 
 
-.container .pack:nth-child(1){
+.service-container .pack:nth-child(1){
   background: #4caf50;
 }
 
-.container .pack:nth-child(2) .icon{
+.service-container .pack:nth-child(2) .icon{
   background: #d03852;
 }
 
 
-.container .pack:nth-child(2){
+.service-container .pack:nth-child(2){
   background: #f54967;
 }
 
 
-.container .pack:nth-child(3) .icon{
+.service-container .pack:nth-child(3) .icon{
   background: #23798e;
 }
 
 
-.container .pack:nth-child(3){
+.service-container .pack:nth-child(3){
   background: #328fa5;
 }
 
 
-.container .pack:nth-child(4) .icon{
+.service-container .pack:nth-child(4) .icon{
   background: #A333FF;
 }
 
 
-.container .pack:nth-child(4){
+.service-container .pack:nth-child(4){
   background: #8A33FF;
 }
 /* services css end */
@@ -642,7 +641,6 @@ section{
   padding: 0.5%;
 }
 .text-center{
-  /* text-align: center; */
   padding-left: 40%;
   color: #f74764;
   font-size: 40px;
@@ -660,13 +658,13 @@ section{
   margin: 1%;
   padding: 2%;
   float: left;
-  background: linear-gradient(57deg, #6e2323, #f74764);
+  background: linear-gradient(57deg, #ac6161, #c56e7d);
   border-radius: 15px;
 }
 input[type=text], select, textarea{
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(250, 248, 248);
   border-radius: 5px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -674,15 +672,15 @@ input[type=text], select, textarea{
   resize: vertical;
 }
 input[type=submit]{
-  background-color: rgb(241, 58, 104);
-  color: white;
+  background-color: #f0abb7;
+  color: rgb(27, 26, 26);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 input[type=submit]:hover{
-  background-color: #6e2323;
+  background-color: #ffffff;
 }
 @media only screen and (max-width:768px){
   .contact{
