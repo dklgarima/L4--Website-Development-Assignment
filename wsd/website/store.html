@@ -14,335 +14,495 @@
 
 </head>
 
-<body>
-    <!-- desktop header  -->
+ <!-- desktop header  -->
 
-    <header id="d-header">
-        <a href="#" class="logo">Book Addicts</a>
-        <ul class="navigation">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </header>
-    <!-- desktop header end  -->
+ <header id="d-header">
+    <a href="#" class="logo">Book Addicts</a>
+    <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</header>
+<!-- desktop header end  -->
 
-    <!-- mobile header -->
-    <header id="m-header">
-        <div class="header-top">
-            <a href="#" class="m-logo block-left">Book Addicts</a>
-            <a class="toggler block-right"><i class="fa fa-bars" aria-hidden="true" id="menubar"></i></a>
-        </div>
-        <ul class="m-navigation">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </header>
-    <!-- mobile header end -->
-
-
-    <div class="store-container">
-        <p>Search your books here:</p>
-        <!-- Search box -->
-        <div class="search-box">
-            <form action="" onsubmit="return false">
-                <input type="text" id="search" placeholder="Type here to search....">
-                <!-- <button id="btn-search">Search</button> -->
-            </form>
-        </div>
-        <div class="filter-box">
-            <a href="#" class="store-btn active" data-filter="All">All</a>
-            <a href="#" class="store-btn" data-filter="Fiction">Fiction</a>
-            <a href="#" class="store-btn" data-filter="Non-fiction">Non-fiction</a>
-            <a href="#" class="store-btn" data-filter="Romantic">Romantic</a>
-            <a href="#" class="store-btn" data-filter="Horror">Horror</a>
-            <a href="#" class="store-btn" data-filter="Novel">Novel</a>
-            <a href="#" class="store-btn" data-filter="True-crime">True-crime</a>
-            <a href="#" class="store-btn" data-filter="Inspirational">Inspirational</a>
-        </div>
+<!-- mobile header -->
+<header id="m-header">
+    <div class="header-top">
+        <a href="#" class="m-logo block-left">Book Addicts</a>
+        <a class="toggler block-right"><i class="fa fa-bars" aria-hidden="true" id="menubar"></i></a>
     </div>
+    <ul class="m-navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</header>
+<!-- mobile header end -->
 
-    <main>
-        <div class="slide-container">
-            <section class="store-container" id="store-products">
+    <body>
+        <div class="cart-container">
+            <header>
+                <nav>
+                    <div class="cart__counter">
+                        <i class="fa fa-shopping-cart"></i><span id="total__counter">0</span>
+                    </div>
+                </nav>
+                <div class="cart">
+                    <div class="cart__items">
+                        <div class="check_out">
+                            <h4>Total Ammount : $</h4>
+                            <h4 class="total__cost">0</h4><button class="cart-btn check_out_btn">Checkout</button> </div>
+                    </div>
+                </div>
 
-                <div class="store-product Fiction">
-                    <img src="images/pro1.jpg" alt="">
-                    <div class="product-details">
-                        <h2>The Midnight Library</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="">Add to Cart</a>
-                    </div>
+            </header>
+
+            <div class="products">
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro1.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">Malice</h4>
+                    <h5 class="product__price">$60</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Fiction">
-                    <img src="images/pro2.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Brave New World</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro2.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">I Wish You All The Best</h4>
+                    <h5 class="product__price">$79.99</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Non-fiction">
-                    <img src="images/pro3.jpg" alt="">
-                    <div class="product-details">
-                        <h2>When Breath Becomes Air</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro3.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">When Breathe Becomes Air</h4>
+                    <h5 class="product__price">$70</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Horror">
-                    <img src="images/pro4.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Welcome to Heaven's Peak</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro4.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">Welcome To Heaven's Peak</h4>
+                    <h5 class="product__price">$90.99</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Horror">
-                    <img src="images/pro5.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Asylum</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro5.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">Asylum</h4>
+                    <h5 class="product__price">$40</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Horror">
-                    <img src="images/pro6.jpg" alt="">
-                    <div class="product-details">
-                        <h2>The Night</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro6.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">The Night</h4>
+                    <h5 class="product__price">$55</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Non-fiction">
-                    <img src="images/pro7.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Sapiens: A Brief History of Humankind</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro7.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">Sapiens A Brief History Of Humankind</h4>
+                    <h5 class="product__price">$69.99</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Romantic">
-                    <img src="images/pro8.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Call Me By Your Name</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro8.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">Call Me By Your Name</h4>
+                    <h5 class="product__price">$49.99</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Non-fiction">
-                    <img src="images/pro9.jpeg" alt="">
-                    <div class="product-details">
-                        <h2>A Brief History of Time/h2>
-                            <p> <span>$39.99</span> $29.99</p>
-                            <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro9.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">The Canterville Ghost</h4>
+                    <h5 class="product__price">$65</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Romantic">
-                    <img src="images/pro10.jpg" alt="">
-                    <div class="product-details">
-                        <h2>The Duke and I</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro10.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">Bridgerton The Duke And I</h4>
+                    <h5 class="product__price">$55</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Romantic">
-                    <img src="images/pro11.jpg" alt="">
-                    <div class="product-details">
-                        <h2>You and Me on Vacation</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro11.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">You And Me On Vacation</h4>
+                    <h5 class="product__price">$44</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Novel">
-                    <img src="images/pro12.jpg" alt="">
-                    <div class="product-details">
-                        <h2>The Great Gatsby</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro12.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">The Great Gatsby</h4>
+                    <h5 class="product__price">$69.99</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Inspirational">
-                    <img src="images/pro13.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Think and Grow Rich</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/special1.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">3<sup style="color: black;">rd</sup> Paper Teacher's Service Commission</h4>
+                    <h5 class="product__price">$20</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Novel">
-                    <img src="images/pro14.jpg" alt="">
-                    <div class="product-details">
-                        <h2>The Color Purple</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro14.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">The Color Purple</h4>
+                    <h5 class="product__price">$30</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Novel">
-                    <img src="images/pro15.jpg" alt="">
-                    <div class="product-details">
-                        <h2>The Call of the Wild</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="2" />
+                    <img src="images/pro15.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">The Call Of The Wild</h4>
+                    <h5 class="product__price">$45</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Inspirational">
-                    <img src="images/pro16.jpg" alt="">
-                    <div class="product-details">
-                        <h2>The Power of Positive Thinking</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="3" />
+                    <img src="images/pro16.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">The Power Of Positive Thinking</h4>
+                    <h5 class="product__price">$85</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Inspirational">
-                    <img src="images/pro17.jpg" alt="">
-                    <div class="product-details">
-                        <h2>How to Win Friends and Influence People</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro17.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">How To Win Friends & Influence People</h4>
+                    <h5 class="product__price">$65</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Novel">
-                    <img src="images/pro18.jpg" alt="">
-                    <div class="product-details">
-                        <h2>A Clockwork Orange</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro18.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">The ClockWork Orange</h4>
+                    <h5 class="product__price">$90</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product True-crime">
-                    <img src="images/pro19.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Helter Skelter</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="2" />
+                    <img src="images/pro19.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">Somebody's Daughter</h4>
+                    <h5 class="product__price">$80</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product True-crime">
-                    <img src="images/pro20.jpg" alt="">
-                    <div class="product-details">
-                        <h2>Say Nothing</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="3" />
+                    <img src="images/pro20.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">Say Nothing</h4>
+                    <h5 class="product__price">$85</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Non-fiction">
-                    <img src="images/pro21.jpeg" alt="">
-                    <div class="product-details">
-                        <h2>Thinking Fast and Slow</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/special2.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">Teacher Service Commission Essentials</h4>
+                    <h5 class="product__price">$25</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product True-crime">
-                    <img src="images/pro22.jpg" alt="">
-                    <div class="product-details">
-                        <h2>The Fact of A Body</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="1" />
+                    <img src="images/pro22.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">The Fact Of A Body</h4>
+                    <h5 class="product__price">$60</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product Horror">
-                    <img src="images/pro23.jpg" alt="">
-                    <div class="product-details">
-                        <h2>The Silence of the Lambs</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="2" />
+                    <img src="images/pro23.jpg" alt="" srcset="" id="image" />
+                    <h4 class="product__name">The Silence Of The Lambs</h4>
+                    <h5 class="product__price">$80</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-                <div class="store-product True-crime">
-                    <img src="images/pro24.jpg" alt="">
-                    <div class="product-details">
-                        <h2>If You Tell</h2>
-                        <p> <span>$39.99</span> $29.99</p>
-                        <a href="#">Add to Cart</a>
-                    </div>
+                <div class="product__element">
+                    <input type="hidden" name="" id="product__id" value="3" />
+                    <img src="images/pro24.jpg" alt="If You Tell" srcset="" id="image" />
+                    <h4 class="product__name">If You Tell</h4>
+                    <h5 class="product__price">$85</h5>
+                    <div class="cart-btn__add__to__cart">Add To Cart</div>
                 </div>
-            </section>
+            </div>
         </div>
-    </main>
 
 
-    <footer>
-        <div class="main-content">
-            <div class="left box">
-                <h2>About us</h2>
-                <div class="content">
-                    <p>This is the website where you can find the different varieties of book.</p>
-                    <div class="social">
-                        <a href="#"><span <i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
-                        <a href="#"><span <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
-                        <a href="#"><span <i class="fa fa-instagram" aria-hidden="true"></i></span></a>
-                        <a href="#"><span <i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <h2>About us</h2>
+                    <div class="content">
+                        <p>This is the website where you can find the different varieties of book.</p>
+                        <div class="social">
+                            <a href="#"><span <i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+                            <a href="#"><span <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
+                            <a href="#"><span <i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                            <a href="#"><span <i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="center box">
-                <h2>Address</h2>
-                <div class="content">
-                    <div class="place">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span class="text">Budhanilkantha, Kathmandu</span>
-                    </div>
-                    <div class="phone">
-                        <i class="fa fa-phone-square" aria-hidden="true"></i>
-                        <span class="text">+977 9818565467</span>
-                    </div>
-                    <div class="email">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <span class="text">bookaddicts33@gmail.com</span>
-                    </div>
-                </div>
-            </div>
-            <div class="right box">
-                <h2>Contact us</h2>
-                <div class="content">
-                    <form action="#">
+                <div class="center box">
+                    <h2>Address</h2>
+                    <div class="content">
+                        <div class="place">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span class="text">Budhanilkantha, Kathmandu</span>
+                        </div>
+                        <div class="phone">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                            <span class="text">+977 9818565467</span>
+                        </div>
                         <div class="email">
-                            <div class="text">Email *</div>
-                            <input type="email" required>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span class="text">bookaddicts33@gmail.com</span>
                         </div>
-                        <div class="msg">
-                            <div class="text">Message *</div>
-                            <textarea rows="2" cols="25" required></textarea>
-                        </div>
-                        <div class="button">
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
+                    </div>
+                </div>
+                <div class="right box">
+                    <h2>Contact us</h2>
+                    <div class="content">
+                        <form action="#">
+                            <div class="email">
+                                <div class="text">Email *</div>
+                                <input type="email" required>
+                            </div>
+                            <div class="msg">
+                                <div class="text">Message *</div>
+                                <textarea rows="2" cols="25" required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="bottom">
-            <center>
-                <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
-            </center>
-        </div>
-    </footer>
+            <div class="bottom">
+                <center>
+                    <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+                </center>
+            </div>
+        </footer>
 
-    <script src="main.js"></script>
-    <script>
-        var menu = document.querySelector('.toggler');
+        <script src="main.js"></script>
+        <script>
+            // var menu = document.querySelector('.toggler');
 
-        menu.addEventListener('click', () => {
-            var m = document.querySelector('.m-navigation');
-            // m.classList.toggle('m-nav-show');
-            if (m.style.display == "block") {
+            // menu.addEventListener('click', () => {
+            //     var m = document.querySelector('.m-navigation');
+            //     // m.classList.toggle('m-nav-show');
+            //     if (m.style.display == "block") {
 
 
-                m.style.display = "none";
-            } else {
-                m.style.display = "block";
+            //         m.style.display = "none";
+            //     } else {
+            //         m.style.display = "block";
+
+
+            //     }
+            // });
+
+            const cartDOM = document.querySelector(".cart__items");
+            const addToCartBtn = document.querySelectorAll(".cart-btn__add__to__cart");
+            const cartCounter = document.querySelector(".cart__counter");
+            const totalCost = document.querySelector(".total__cost");
+            const totalCount = document.querySelector("#total__counter");
+            const checkOutBtn = document.querySelector(".check_out_btn");
+
+            // assign all values from local stoarge
+            let cartItems = (JSON.parse(localStorage.getItem("cart_items")) || []);
+
+
+            document.addEventListener("DOMContentLoaded", loadData);
+
+
+            checkOutBtn.addEventListener("click", () => {
+                alert("Your Order Sent Succesfully");
+                clearCartItems();
+            })
+
+            cartCounter.addEventListener("click", () => {
+                cartDOM.classList.toggle("active");
+            })
+
+            addToCartBtn.forEach(btn => {
+
+                btn.addEventListener("click", () => {
+                    let parentElement = btn.parentElement;
+
+                    const product = {
+                        id: parentElement.querySelector("#product__id").value,
+                        name: parentElement.querySelector(".product__name").innerText,
+                        image: parentElement.querySelector("#image").getAttribute("src"),
+                        price: parentElement.querySelector(".product__price").innerText.replace("$", ""),
+                        quantity: 1
+                    }
+
+                    let isIncart = cartItems.filter(item => item.id === product.id).length > 0;
+
+                    // check if alreday Exists
+                    if (!isIncart) {
+                        addItemToTheDOM(product);
+                    } else {
+                        alert("Product Already in the Cart");
+                        return;
+                    }
+
+                    const cartDOMItems = document.querySelectorAll(".cart_item");
+
+                    cartDOMItems.forEach(individualItem => {
+                        if (individualItem.querySelector("#product__id").value === product.id) {
+                            // increrase
+                            increaseItem(individualItem, product);
+                            // decrease
+                            decreaseItem(individualItem, product);
+                            // Removing Element
+                            removeItem(individualItem, product);
+
+                        }
+                    })
+
+                    cartItems.push(product);
+                    calculateTotal();
+                    saveToLocalStorage();
+                });
+
+            })
+
+            function loadData() {
+                if (cartItems.length > 0) {
+                    cartItems.forEach(product => {
+                        addItemToTheDOM(product);
+
+                        const cartDOMItems = document.querySelectorAll(".cart_item");
+
+                        cartDOMItems.forEach(individualItem => {
+                            if (individualItem.querySelector("#product__id").value === product.id) {
+                                // increrase
+                                increaseItem(individualItem, product);
+                                // decrease
+                                decreaseItem(individualItem, product);
+                                // Removing Element
+                                removeItem(individualItem, product);
+
+                            }
+                        });
+                    });
+                    calculateTotal();
+                }
+            }
+
+            function calculateTotal() {
+                let total = 0;
+                cartItems.forEach(item => {
+                    total += item.quantity * item.price;
+                });
+                totalCost.innerText = total;
+                totalCount.innerText = cartItems.length;
+
+            }
+
+            function saveToLocalStorage() {
+
+                localStorage.setItem("cart_items", JSON.stringify(cartItems));
+
+            }
+
+            function clearCartItems() {
+
+                localStorage.clear();
+                cartItems = [];
+
+                document.querySelectorAll(".cart__items").forEach(item => {
+
+                    item.querySelectorAll(".cart_item").forEach(node => {
+                        node.remove();
+                    });
+
+                });
+                cartDOM.classList.toggle("active");
+                calculateTotal();
 
 
             }
-        });
-    </script>
-</body>
+
+            function addItemToTheDOM(product) {
+                // Adding the new Item to the Dom
+                cartDOM.insertAdjacentHTML("afterbegin", `<div class="cart_item">
+            <input type="hidden" id="product__id" value="${product.id}">
+           <img id="product_image" src="${product.image}" alt="" srcset="">
+           <h4 class="product__name">${product.name}</h4>
+           <a class="btn__small" action="decrease">&minus;</a> <h4 class="product__quantity">${product.quantity}</h4><a class="cart-btn__small" action="increase">&plus;</a>
+          <span id="product__price">${product.price}</span>
+           <a class="btn__small btn_remove" action="remove">&times;</a>
+       </div>`);
+            }
+
+            function increaseItem(individualItem, product) {
+
+                individualItem.querySelector("[action='increase']").addEventListener('click', () => {
+                    // Actual Array
+                    cartItems.forEach(cartItem => {
+                        if (cartItem.id === product.id) {
+                            individualItem.querySelector(".product__quantity").innerText = ++cartItem.quantity;
+                            calculateTotal();
+                            saveToLocalStorage();
+                        }
+                    })
+                });
+
+            }
+
+            function decreaseItem(individualItem, product) {
+
+                individualItem.querySelector("[action='decrease']").addEventListener('click', () => {
+                    // all cart items in the dom
+                    cartItems.forEach(cartItem => {
+                        // Actual Array
+                        if (cartItem.id === product.id) {
+                            if (cartItem.quantity > 1) {
+                                individualItem.querySelector(".product__quantity").innerText = --cartItem.quantity;
+                                calculateTotal();
+                                saveToLocalStorage();
+                            } else {
+                                // removing this element and assign the new elemntos to the old of the array
+                                console.log(cartItems);
+
+                                cartItems = cartItems.filter(newElements => newElements.id !== product.id);
+                                individualItem.remove();
+
+                                calculateTotal();
+                                saveToLocalStorage();
+
+                            }
+
+                        }
+                    })
+                });
+            }
+
+            function removeItem(individualItem, product) {
+
+                individualItem.querySelector("[action='remove']").addEventListener('click', () => {
+                    cartItems.forEach(cartItem => {
+                        if (cartItem.id === product.id) {
+                            cartItems = cartItems.filter(newElements => newElements.id !== product.id);
+                            individualItem.remove();
+                            calculateTotal();
+                            saveToLocalStorage();
+                        }
+                    })
+                });
+            }
+        </script>
+    </body>
 
 </html>

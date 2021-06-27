@@ -8,6 +8,7 @@ window.addEventListener('scroll', function(){
 let slideIndex = 0;
 let slider = document.querySelector(".slider");
 let slides = document.querySelector(".slides");
+// alert(slides);
 let slide = document.querySelectorAll(".slide");
 let dots = document.querySelectorAll(".dots span")
 
@@ -29,7 +30,7 @@ function plusslide(position) {
         element.classList.remove("dot-active");
     }
 
-    slides.style.left = `-${slideIndex - 1}00%`;
+    slides.style.left = '-${slideIndex - 1}00%';
     dots[slideIndex - 1].classList.add("dot-active");
 }
 
@@ -47,7 +48,7 @@ function currentslide(index) {
         element.classList.remove("dot-active");
     }
 
-    slides.style.left = `-${index - 1}00%`;
+    slides.style.left = '-${index - 1}00%';
     dots[index - 1].classList.add("dot-active");
 
     slideIndex = index;
@@ -69,7 +70,7 @@ function showslide() {
         element.classList.remove("dot-active");
     }
 
-    slides.style.left = `-${slideIndex - 1}00%`;
+    slides.style.left = '-${slideIndex - 1}00%';
     dots[slideIndex - 1].classList.add("dot-active");
 }
 
@@ -86,19 +87,6 @@ slider.addEventListener("mouseout" , ()=> {
     interval = setInterval(()=> {
         showslide();   
     } , 3000);    // on mouseout from slide then again start Changing every image after 3  seconds 
-});
-
-//login/signup
-const sign_in_btn = document.querySelector("#sign-in-btn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
-const container = document.querySelector(".container");
-
-sign_up_btn.addEventListener("click", () => {
-  container.classList.add("sign-up-mode");
-});
-
-sign_in_btn.addEventListener("click", () => {
-  container.classList.remove("sign-up-mode");
 });
 
 //password toggle
