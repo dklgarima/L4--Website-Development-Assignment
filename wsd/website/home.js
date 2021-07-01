@@ -1,3 +1,9 @@
+//sticky header
+window.addEventListener('scroll', function(){
+    const header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+
 //slider
 let slideIndex = 0;
 let slider = document.querySelector(".slider");
