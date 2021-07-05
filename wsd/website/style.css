@@ -737,7 +737,7 @@ section {
     margin: 1%;
     padding: 2%;
     float: left;
-    background: linear-gradient(80deg, #f58187, #eedca2 100%);
+    background: linear-gradient(200deg, #f58187, #ebb979 100%);
     border-radius: 15px;
 }
 
@@ -847,12 +847,13 @@ form.sign-in-form {
     position: relative;
     top: 90%;
     z-index: 2;
+    left: 20%;
 }
 
 form.sign-up-form {
     position: relative;
     top: -10%;
-    left: 10%;
+    left: 20%;
 }
 
 @media (max-width:768px) {
@@ -1251,7 +1252,7 @@ cart-container {
     padding: 5px 10px;
     border-radius: 10px;
     border: 0px;
-    background: #40a832e5;
+    background: #ec5b93e5;
     color: #fff;
     margin: 10px;
     font-size: 18px;
@@ -1262,7 +1263,7 @@ cart-container {
     padding: 10px 15px;
     border-radius: 10px;
     border: 0px;
-    background: #40a832e5;
+    background: #ec5b93e5;
     color: #fff;
     margin-left: 20px;
     font-size: 18px;
@@ -1448,7 +1449,7 @@ nav>* {
     text-align: center;
     /* top: 10%; */
     bottom: 0;
-    background: #40a832e5;
+    background: #f58187;
     color: #fff;
     width: 100%;
     /* margin: 0 auto; */
@@ -1735,7 +1736,7 @@ label {
 
 .formContainer {
     margin: 10px;
-    background-color: #efffc9;
+    background: linear-gradient(200deg, #f58187, #ebb979 100%);
     padding: 5px 20px 15px 20px;
     border: 1px solid rgb(191, 246, 250);
     border-radius: 3px;
@@ -1762,8 +1763,7 @@ label {
 }
 
 .checkout {
-    background-color: #4caf50;
-    color: white;
+    background-color: #a70838;
     padding: 12px;
     margin: 10px 0;
     border: none;
@@ -1774,7 +1774,7 @@ label {
 }
 
 .checkout:hover {
-    background-color: #45a049;
+    background-color: #4546a0;
 }
 
 a {
@@ -1798,3 +1798,22 @@ span.price {
 
 
 /* checkout page css end */
+
+/* scroll up arrow css start */
+
+.scroll-btn {
+    font-size: 3rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.scroll-btn:hover {
+    color: gray;
+}
+
+
+/* scroll up arrow css end */
+

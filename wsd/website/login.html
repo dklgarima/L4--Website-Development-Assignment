@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
 
 </head>
 
@@ -50,7 +51,7 @@
     <div class="container login-container">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="" class="sign-in-form">
+                <form class="sign-in-form">
                     <h2 class="title title-login">Login</h2>
                     <div class="input-field">
                         <i class="fa fa-user" aria-hidden="true"></i>
@@ -61,7 +62,7 @@
                         <input type="password" placeholder="Password" id="password">
                         <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
                     </div>
-                    <input type="submit" value="login" class="loginbtn solid" onclick="validate()">
+                    <input type="submit" value="login" class="loginbtn solid" onclick="Loginvalidate()">
                     <p class="social-text">or Login with </p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -78,37 +79,37 @@
                         </a>
                     </div>
                 </form>
-                <form action="" class="sign-up-form">
+                <form class="sign-up-form">
                     <h2 class="title title-signup">Signup</h2>
                     <div class="input-field">
                         <i class="fa fa-user" aria-hidden="true"></i>
-                        <input type="text" placeholder="Full name">
+                        <input type="text" id="fullname" placeholder="Full name">
                     </div>
                     <div class="input-field">
                         <i class="fa fa-user" aria-hidden="true"></i>
-                        <input type="text" placeholder="Username">
+                        <input type="text" id="lusername" placeholder="Username">
                     </div>
                     <div class="input-field">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <input type="text" placeholder="Email">
+                        <input type="text" id="email" placeholder="Email">
                     </div>
                     <div class="input-field">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <input type="text" placeholder="Address">
+                        <input type="text" id="address" placeholder="Address">
                     </div>
                     <div class="input-field">
                         <i class="fa fa-phone" aria-hidden="true"></i>
-                        <input type="number" placeholder="Contact">
+                        <input type="number" id="contact" placeholder="Contact">
                     </div>
                     <div class="input-field">
                         <i class="fa fa-lock" aria-hidden="true"></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" id="lpassword" placeholder="Password">
                     </div>
                     <div class="input-field">
                         <i class="fa fa-lock" aria-hidden="true"></i>
-                        <input type="password" placeholder="Confirm Password">
+                        <input type="password" id="cfpassword" placeholder="Confirm Password">
                     </div>
-                    <input type="submit" value="Signup" class="loginbtn solid">
+                    <input type="submit" value="Signup" class="loginbtn solid" onclick="return SignupValidate()">
                     <p class="social-text">or Signup with </p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -161,7 +162,7 @@
                         <a href="#"><span> <i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
                     </div>
                 </div>
-               
+
             </div>
             <div class="center box">
                 <h2>Address</h2>
@@ -202,12 +203,12 @@
                     </div>
                     <h4><a href="../index.html" target="_blank">Click here to go to the Lab Exercises</a></h4>
                 </div>
-                
+
             </div>
-        
+
         </div>
         <div class="bottom">
-                <i class="fa fa-copyright" aria-hidden="true">2020 All rights reserved.</i>
+            <i class="fa fa-copyright" aria-hidden="true">2020 All rights reserved.</i>
         </div>
     </footer>
 
@@ -220,7 +221,7 @@
         //alert(sign_up_btn);
         const container = document.querySelector(".container");
 
-        sign_up_btn.addEventListener("click", function() {
+        sign_up_btn.addEventListener("click", function () {
             container.classList.add("sign-up-mode");
         });
 

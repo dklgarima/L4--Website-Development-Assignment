@@ -65,3 +65,65 @@ function filterProducts(e) {
         }
     })
 }
+
+//Login Form Validation
+function Loginvalidate() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if (username == null || password == "") {
+        alert("Username and password must be filled out");
+        return false;
+    }
+}
+
+//Signup Form Validation
+
+function SignupValidate() {
+    var fullname = document.getElementById("fullname").value;
+    var lusername = document.getElementById("lusername").value;
+    var email = document.getElementById("email").value;
+    var address = document.getElementById("address").value;
+    var contact = document.getElementById("contact").value;
+    var lpassword = document.getElementById("lpassword").value;
+    var cfpassword = document.getElementById("cfpassword").value;
+
+    if (fullname == null || fullname == "") {
+        alert("Please provide your full name");
+        return false;
+    }
+    
+    if (lusername == null || lusername == "") {
+        alert("Username must be filled out");
+        return false;
+    }
+    
+    if (email == null || email == "") {
+        alert("Email must be filled out");
+        return false;
+    }
+    if (address == null || address == "") {
+        alert("Address must be filled out");
+        return false;
+    }
+
+    if (contact == null || contact == "") {
+        alert("Contact must be filled out");
+        return false;
+    }
+    
+    if (password == null || password == "") {
+        alert("Password must be filled out");
+        return false;
+    }
+
+    if (lpassword == null || lpassword == "") {
+        alert("Password must be filled out");
+        return false;
+    }
+
+    if (cfpassword == null || cfpassword == "") {
+        alert("Please confirm your password");
+        return false;
+    }
+}
