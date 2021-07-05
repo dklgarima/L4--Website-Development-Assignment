@@ -1,9 +1,3 @@
-//sticky header
-window.addEventListener('scroll', function(){
-    const header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 0);
-});
-
 //slider
 let slideIndex = 0;
 let slider = document.querySelector(".slider");
@@ -88,3 +82,42 @@ slider.addEventListener("mouseout" , ()=> {
         showslide();   
     } , 3000);    // on mouseout from slide then again start Changing every image after 3  seconds 
 });
+
+var menu = document.querySelector('.toggler');
+// var s1 = document.querySelectorAll('.slides');
+//s(s1);
+
+menu.addEventListener('click', () => {
+    var m = document.querySelector('.m-navigation');
+    // m.classList.toggle('m-nav-show');
+    if (m.style.display == "block") {
+        document.querySelector('.slider').style.top = "0px";
+
+        m.style.display = "none";
+    } else {
+        m.style.display = "block";
+        document.querySelector('.slider').style.top = "217px";
+
+    }
+});
+
+
+//scroll top button
+const scrollBtn = document.querySelector('.scroll-btn');
+
+
+window.addEventListener('scroll', () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollBtn.style.display = 'block';
+    } else {
+        scrollBtn.style.display = 'none';
+    }
+})
+scrollBtn.addEventListener('click', () => {
+    window.scroll({
+        top: 0,
+        behavior: "smooth"
+    })
+})
+
+

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Addicts</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/
-        npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap"
+        rel="stylesheet">
+
 
 
 
@@ -131,7 +128,7 @@
                 </div>
             </div>
         </div>
-        </section>
+    </section>
 
 
     <section class="imenu">
@@ -227,7 +224,7 @@
     </section>
 
 
-    <section class="imenu" id="menu">
+    <section class="imenu">
         <div class="title">
             <h2 class="titleText">Top <span>P</span>icks</h2>
             <p>Get the most recommended and bought books.</p>
@@ -381,49 +378,8 @@
     </div>
 
     <script src="home.js"></script>
+    <script src="main.js"></script>
 
-    <script>
-        var menu = document.querySelector('.toggler');
-        // var s1 = document.querySelectorAll('.slides');
-        //s(s1);
-
-        menu.addEventListener('click', () => {
-            var m = document.querySelector('.m-navigation');
-            // m.classList.toggle('m-nav-show');
-            if (m.style.display == "block") {
-                document.querySelector('.slider').style.top = "0px";
-
-                m.style.display = "none";
-            } else {
-                m.style.display = "block";
-                document.querySelector('.slider').style.top = "217px";
-
-            }
-        });
-
-        //sticky header
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            header.classList.toggle('sticky', window.scrollY > 0);
-        });
-
-        //scroll top button
-        const scrollBtn = document.querySelector('.scroll-btn');
-
-
-        window.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                scrollBtn.style.display = 'block';
-            } else {
-                scrollBtn.style.display = 'none';
-            }
-        })
-        scrollBtn.addEventListener('click', () => {
-            window.scroll({
-                top: 0,
-                behavior: "smooth"
-            })
-        })
-    </script>
 </body>
+
 </html>
