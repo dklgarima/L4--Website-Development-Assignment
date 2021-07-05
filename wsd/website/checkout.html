@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,10 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
 
 </head>
 
@@ -49,15 +48,17 @@
     <div style="height: 100vh;margin-left:40px">
         <div style="height: 20vh;">
         </div>
-        <form name="myForm"  method="post">
-            <h1 style="text-align: center;">Enter your details here:</h1>
+        <form name="myForm" method="post">
+            <h1 style="text-align: center;"> <u> Enter your details here: </u></h1>
             <div class="Fields">
                 <div>
                     <div class="formContainer">
-                        <form>
+                        
+                            <h3 style="text-align: center;">Billing Address</h3>
                             <div class="Fields">
+
                                 <div>
-                                    <h3>Billing Address</h3>
+
                                     <label for="fname">Full Name</label>
                                     <input type="text" id="fname" name="fullname" />
                                     <label for="email"> Email</label>
@@ -69,17 +70,14 @@
 
                                     <label for="cname">Name on Card</label>
                                     <input type="text" id="cname" name="cardname" />
-                                    <div class="Fields">
-                                        <div>
-                                            <label for="expyear">Contact Number</label>
-                                            <input type="text" id="contact" name="contact" />
-                                        </div>
-                                    </div>
+
+                                    <label for="expyear">Contact Number</label>
+                                    <input type="text" id="contact" name="contact" />
+
                                 </div>
                             </div>
-                            <input type="submit" value="Continue to checkout" class="checkout" id="done"
-                                onclick="return validateForm()" />
-                        </form>
+                            <input type="submit" value="Continue to checkout" class="checkout" id="done" onclick="return validateForm()" />
+                        
                     </div>
                 </div>
             </div>
@@ -93,10 +91,10 @@
                 <div class="content">
                     <p>This is the website where you can find the different varieties of book.</p>
                     <div class="social">
-                        <a href="#"><span <i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
-                        <a href="#"><span <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
-                        <a href="#"><span <i class="fa fa-instagram" aria-hidden="true"></i></span></a>
-                        <a href="#"><span <i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
+                        <a href="#"><span> <i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+                        <a href="#"><span> <i class="fa fa-twitter-square" aria-hidden="true"></i></span></a>
+                        <a href="#"><span> <i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                        <a href="#"><span> <i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -117,29 +115,33 @@
                     </div>
                 </div>
             </div>
-            <div class="right box">
-                <h2>Contact us</h2>
-                <div class="content">
-                    <form action="#" class="footer-form">
-                        <div class="email">
-                            <div class="text">Email *</div>
-                            <input type="email" required>
-                        </div>
-                        <div class="msg">
-                            <div class="text">Message *</div>
-                            <textarea rows="2" cols="25" required></textarea>
-                        </div>
-                        <div class="button">
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
+            <div class="right box">
+                <h2>My Details</h2>
+
+                <div class="content">
+                    <div class="place">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        <span class="text">Course: Bsc hons. Computing</span>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <span class="text">Module: Web Development</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <span class="text">Section: 'C'</span>
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                        <span class="text">University ID: 77261088</span>
+                    </div>
+                    <h4><a href="../index.html" target="_blank">Click here to go to the Lab Exercises</a></h4>
+                </div>
+
+            </div>
         <div class="bottom">
-            <center>
                 <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
-            </center>
         </div>
     </footer>
 
@@ -170,27 +172,27 @@
             var email = document.getElementById("email").value;
             var contact = document.getElementById("contact").value;
 
-            if(fname == null || fname == ""){
+            if (fname == null || fname == "") {
                 alert("Name must be filled out");
                 return false;
             }
 
-            if(cname == null || cname == ""){
+            if (cname == null || cname == "") {
                 alert("Card name must be filled out");
                 return false;
             }
 
-            if(email == null || email == ""){
+            if (email == null || email == "") {
                 alert("Email name must be filled out");
                 return false;
             }
 
-            if(contact == null || contact == ""){
+            if (contact == null || contact == "") {
                 alert("Contact name must be filled out");
                 return false;
             }
 
-            if(address == null || address == ""){
+            if (address == null || address == "") {
                 alert("Address must be filled out");
                 return false;
             }

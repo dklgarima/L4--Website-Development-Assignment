@@ -70,7 +70,7 @@ function showslide() {
         element.classList.remove("dot-active");
     }
 
-    slides.style.left = '-${slideIndex - 1}00%';
+    slides.style.left = `-${slideIndex - 1}00%`;
     dots[slideIndex - 1].classList.add("dot-active");
 }
 
