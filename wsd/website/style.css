@@ -355,7 +355,6 @@ footer {
     background: #f12020;
 }
 
-
 .center .content .fas:hover {
     background: #f12020;
 }
@@ -369,7 +368,6 @@ footer {
 .center .content .phone {
     margin: 15px 0;
 }
-
 
 .right .content .text {
     font-size: 1.0625rem;
@@ -390,7 +388,6 @@ footer {
     color: green;
     font-weight: bold;
 }
-
 
 @media screen and (max-width: 900px) {
     footer {
@@ -413,7 +410,7 @@ footer {
 /* genre/picks/special books css start */
 
 .title {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     font-size: 20px;
     justify-content: center;
@@ -461,7 +458,7 @@ p {
 }
 
 .genre-box {
-    width: 15.3511% !important;
+    /* width: 15.3511% !important; */
 }
 
 .imenu .content .box .imgBx {
@@ -885,7 +882,7 @@ form.h2 {
     font-size: 2.2rem;
     color: #444;
     margin-bottom: 10px;
-    margin-left: 138px;
+    /* margin-left: 138px; */
 }
 
 .input-field {
@@ -934,7 +931,7 @@ form.h2 {
 
 .social-text {
     padding: 0.7rem 0;
-    margin-left:  140px;
+    margin-left: 140px;
     margin-top: 0%;
     font-size: 1rem;
 }
@@ -943,7 +940,6 @@ form.h2 {
     display: flex;
     /* justify-content: center; */
     margin-left: 65px;
-
 }
 
 @media (max-width:768px) {
@@ -987,7 +983,6 @@ form.h2 {
     margin-bottom: 0px;
     cursor: pointer;
     transition: 0.5s;
-    
 }
 
 .loginbtn:hover {
@@ -1806,6 +1801,7 @@ span.price {
 
 /* checkout page css end */
 
+
 /* scroll up arrow css start */
 
 .scroll-btn {
@@ -1824,3 +1820,17 @@ span.price {
 
 /* scroll up arrow css end */
 
+
+/* form wrapper css */
+
+.form-wrapper {
+    height: 100vh;
+    margin-left: 40px;
+}
+
+@media (max-width:768px) {
+    .form-wrapper {
+        height: 160vh;
+        margin-left: 0;
+    }
+}
