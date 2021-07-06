@@ -447,6 +447,7 @@ p {
     font-display: row-reverse;
     flex-wrap: wrap;
     margin-top: 50px;
+    margin: 50px;
 }
 
 .imenu .content .box {
@@ -455,10 +456,6 @@ p {
     margin: 10px;
     border: 10px solid #fff;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
-}
-
-.genre-box {
-    /* width: 15.3511% !important; */
 }
 
 .imenu .content .box .imgBx {
@@ -739,6 +736,7 @@ section {
 }
 
 input[type=text],
+input[type=email],
 select,
 textarea {
     width: 100%;
@@ -1557,7 +1555,8 @@ nav>* {
     .products {
         display: flex;
         flex-wrap: wrap;
-    }
+        
+    } 
     .cart-btn__add__to__cart {
         width: auto;
     }

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,17 +54,17 @@
             <div class="contact-form">
                 <form>
                     <label style="font-size: 20px;">Name: </label>
-                    <input type="text" name="firstname" placeholder="Your name.....">
+                    <input type="text" id="name" name="name" placeholder="Your name.....">
 
                     <label style="font-size: 20px;">Email: </label>
-                    <input type="text" name="lastname" placeholder="Your email.....">
+                    <input type="text" id="email" name="email" placeholder="Your email.....">
 
                     <label style="font-size: 20px;">Message: </label>
                     <!-- <input type="text" name="email" placeholder="your email....."> -->
-                    <textarea rows="2" cols="25" required placeholder="Type your message here..."></textarea>
+                    <textarea rows="2" cols="25" id="message" placeholder="Type your message here..."></textarea>
 
 
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" onclick="return validateContactForm()">
                 </form>
             </div>
 
@@ -159,6 +158,34 @@
 
             }
         });
+
+         //form validation
+         function validateContactForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name == null || name == "") {
+                alert("Please enter the name");
+                return false;
+            }
+
+            if (email == null || email == "") {
+                alert("Please enter the email");
+                return false;
+            }
+
+            if (message == null || message == "") {
+                alert("Please type some message");
+                return false;
+            }
+
+            var exp = /^([a-z 0-9\.-]+)@([a-z0-9]+).([a-zA-Z.]+[a-zA-Z])$/g;
+            if (!exp.test(email)) {
+                alert("Email format doesn't match");
+                return false;
+            }
+        }
     </script>
 </body>
 </html>

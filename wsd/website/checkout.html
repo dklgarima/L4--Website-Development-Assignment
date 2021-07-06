@@ -62,7 +62,7 @@
                                 <label for="fname">Full Name</label>
                                 <input type="text" id="fname" name="fullname" />
                                 <label for="email"> Email</label>
-                                <input type="text" id="email" name="email" />
+                                <input type="email" id="email" name="email" />
                                 <label for="adr"> Address</label>
                                 <input type="text" id="adr" name="address" />
                             </div>
@@ -187,6 +187,11 @@
                 alert("Email name must be filled out");
                 return false;
             }
+            var exp = /^([a-z 0-9\.-]+)@([a-z0-9]+).([a-zA-Z.]+[a-zA-Z])$/g;
+            if (!exp.test(email)) {
+                alert("Email format doesn't match");
+                return false;
+            }
 
             if (contact == null || contact == "") {
                 alert("Contact name must be filled out");
@@ -199,11 +204,12 @@
             }
 
             redirect();
+            return false;
         }
 
         function redirect() {
             alert("Your order has been placed successfully.");
-            window.location.href = "store.html";
+            window.location.href = "home.html";
         }
     </script>
 </body>
